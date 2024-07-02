@@ -1,4 +1,4 @@
-# Activation Functions:
+#Activation Functions:
 
 An activation function is a crucial component in deep learning models.
 It performs a nonlinear transformation on the input to get better results on a complex neural network.
@@ -9,7 +9,12 @@ Activation functions play a critical role in determining the output of each neur
 
 ## Types of Activation Function:
 
-1.  Sigmoid Activation Function: 
+1.  Sigmoid Activation Function:
+
+   
+![image](https://github.com/Recode-Hive/machine-learning-repos/assets/72333364/95e3257c-7c7e-454d-b3ab-f93cbe2aaef2)
+
+
 
     - Formula:  `1/(1+e^-x)`
     - Graph: Smooth, S-shaped curve.
@@ -18,7 +23,10 @@ Activation functions play a critical role in determining the output of each neur
     - As the range is minimum, prediction would be more accurate.
     - It causes a problem mainly called as vanishing gradient problem which occurs during backpropagation, the gradients can       become extremely small, especially for large positive or negative inputs, which can slow down learning or even cause it to stall.
 
-2. Hyperbolic Tangent (tanh) Activation Function:
+3. Hyperbolic Tangent (tanh) Activation Function:
+
+![image](https://github.com/Recode-Hive/machine-learning-repos/assets/72333364/3ef16d38-8a51-4f1c-9441-14adc67f231e)
+
 
     - Formula: `tan(hx) = (e^x - e^-x)/(e^x + e^-x)`
     - Graph: Also exhibits a smooth, S-shaped curve.
@@ -26,7 +34,10 @@ Activation functions play a critical role in determining the output of each neur
     - It is also used to predict or to differentiate between two classes but it maps the negative input into negative quantity only 
     - Can suffer from vanishing gradients similar to the sigmoid function.
 
-3. Rectified Linear Unit (ReLU) Activation Function:
+4. Rectified Linear Unit (ReLU) Activation Function:
+
+   ![image](https://github.com/Recode-Hive/machine-learning-repos/assets/72333364/f5d4ee21-87b7-4e4b-9d99-ce2f252bfd35)
+
 
     - Formula: `f(x) = max(0,x) `
     - Range: [0, ∞)
@@ -35,7 +46,10 @@ Activation functions play a critical role in determining the output of each neur
     - Problem associated with it is unbounded on the positive side, which can lead to exploding gradients, especially in deep    
     networks. It also suffers from a problem known as Dying ReLU which is ReLU neurons can sometimes become "dead" during training, meaning they always output zero due to having a negative weight update. This problem particularly occurs when the learning rate is too high, causing a large portion of the neurons to be inactive.
 
-4.  Leaky ReLU Activation Function:
+6.  Leaky ReLU Activation Function:
+
+   ![image](https://github.com/Recode-Hive/machine-learning-repos/assets/72333364/fbf2dab1-462d-45da-9534-be95a1de08c1)
+
 
     - Formula: `f(x) = {x , if(x>0) and αx , if(x<=0)}`
     - Range: (-∞, ∞)
@@ -43,7 +57,10 @@ Activation functions play a critical role in determining the output of each neur
     - It also solves the problem of Dying ReLU as discussed in ReLU Activation Function.
     - Introduces an additional hyperparameter (α) that needs to be tuned, although often a small value like 0.01 suffices.
 
-5. Softmax Activation Function:
+8. Softmax Activation Function:
+
+   ![image](https://github.com/Recode-Hive/machine-learning-repos/assets/72333364/07da0843-df3e-400f-8d3c-4cd44f204c74)
+
 
     - the softmax basically gives value to the input variable according to their weight.
     - Range: (0, 1) for each output, with the sum of outputs equal to 1.
